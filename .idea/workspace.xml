@@ -112,7 +112,7 @@
       <file leaf-file-name="CoreTasks.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/co/uberdev/ultimateorganizer/core/CoreTasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="1" selection-start="172" selection-end="172" vertical-scroll-proportion="0.20522387" vertical-offset="0" max-vertical-offset="804">
+            <state line="11" column="1" selection-start="172" selection-end="172" vertical-scroll-proportion="0.20573565" vertical-offset="0" max-vertical-offset="802">
               <folding />
             </state>
           </provider>
@@ -224,6 +224,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="FullScreen" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../db" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -476,7 +477,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/co/uberdev/ultimateorganizer/core/CoreTasks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="172" selection-end="172" vertical-scroll-proportion="0.20522387" vertical-offset="0" max-vertical-offset="804">
+        <state line="11" column="1" selection-start="172" selection-end="172" vertical-scroll-proportion="0.20573565" vertical-offset="0" max-vertical-offset="802">
           <folding />
         </state>
       </provider>

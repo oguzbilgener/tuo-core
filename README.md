@@ -16,4 +16,6 @@ Then we can start cloning the `tuo-core` repo. to do it, **cd** into `~/dev/tuo`
 All development works to tuo-core, the repo which contains our core classes should be done in `tuo/tuo-core` directory. You should frequently `git pull` here, to receive the latest updates. When you make a change, you can `git add`, `git commit` and `git push`.
 
 ## Using tuo-core
-We will use tuo-core inside our tuo-android and tuo-server repositories. (To be continued)
+We will use tuo-core inside our tuo-android and tuo-server repositories. So, in order for our subprojects to use them, they should be able to access them. They could use the `tuo-core` repo we just cloned, however, it might also cause problems. For instance, whenever you push your Play project to the server, the core repository should also be updated on the server. Perhaps this could also be provided, but let's try that later.
+### In server
+In the Play project, the `app` directory contains all the Java core we are going to write. Then, our core code should also exist in the same directory.
