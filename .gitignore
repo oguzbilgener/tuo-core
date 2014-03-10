@@ -46,3 +46,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+# intellij idea
+*.iml
