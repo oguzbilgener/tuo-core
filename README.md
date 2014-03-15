@@ -32,6 +32,7 @@ All development works to tuo-core, the repo which contains our core classes, sho
 
 ## Using tuo-core
 ### In server
-Coming soon
+Coming soon. For more instructions, refer to the README.md file of the `tuo-server` project.
+
 ### In Android
-The Gradle build system in the Android project is made to automatically import `tuo-core`. All you need is the `tuo-core` repo in the same directory with `tuo-android`. Only use **Android Studio**.
+The Gradle build system in the Android project is made to automatically import `tuo-core`. All you need is the `tuo-core` repo in the same directory with `tuo-android`. Only use **Android Studio**. For more instructions, refer to the README.md file of the `tuo-android` project.
