@@ -3,6 +3,7 @@
 This is the core repository for our project. The code in this repo will be used both in the Android project and the Play project.
 
 ## Before starting
+### No Windows
 Use Linux or OS X! (Especially if you are developing the server app)
 ### How your directory structure should be
 To create the neccessary directory structure, get into your favorite development directory first. Let's say it is called `dev`, in my `/Users/oguzbilgener` user directory. then it can also be relatively accessed via `~/dev`.
