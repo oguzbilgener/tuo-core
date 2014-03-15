@@ -1,6 +1,7 @@
 package co.uberdev.ultimateorganizer.core;
 
 import java.util.ArrayList;
+import com.google.gson.Gson;
 
 /**
  * Created by oguzbilgener on 02/03/14.
