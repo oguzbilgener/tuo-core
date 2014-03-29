@@ -6,7 +6,7 @@ import com.google.gson.Gson;
  * Created by oguzbilgener on 01/03/14.
  */
 public class Core
-{
+{ // lol
 	public String asJsonString()
 	{
 		return new Gson().toJson(this);
