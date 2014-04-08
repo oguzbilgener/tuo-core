@@ -9,4 +9,9 @@ public class CoreTasks extends CoreList
 	{
 		super();
 	}
+
+    public CoreTask get(int index)
+    {
+        return (CoreTask) get(index);
+    }
 }
