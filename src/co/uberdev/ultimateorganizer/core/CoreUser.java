@@ -1,5 +1,7 @@
 package co.uberdev.ultimateorganizer.core;
 
+import java.util.Date;
+
 public class CoreUser extends Core
 {
     protected String emailAddress;
@@ -10,9 +12,14 @@ public class CoreUser extends Core
 
     protected String publicKey;
     protected String secretToken;
+    protected String resetKey;
 
     protected String schoolName;
     protected String departmentName;
+
+    protected int state;
+    protected int created;
+    protected int birthday;
 
     public String getEmailAddress() {
         return emailAddress;
@@ -70,6 +77,14 @@ public class CoreUser extends Core
         this.secretToken = secretToken;
     }
 
+    public String getResetKey() {
+        return resetKey;
+    }
+
+    public void setResetKey(String resetKey) {
+        this.resetKey = resetKey;
+    }
+
     public String getSchoolName() {
         return schoolName;
     }
@@ -84,5 +99,29 @@ public class CoreUser extends Core
 
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public int getCreated() {
+        return created;
+    }
+
+    public void setCreated(int created) {
+        this.created = created;
+    }
+
+    public int getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(int birthday) {
+        this.birthday = birthday;
     }
 }
