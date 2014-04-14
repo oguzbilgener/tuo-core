@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * Created by Ata Ali Kılıçlı on 3/31/14.
  */
-public class CoreNote {
+public class CoreNote extends Core {
 
 
     protected long id;
