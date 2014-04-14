@@ -17,12 +17,12 @@ public class CoreTag extends Core
 
     public int getColour()
     {
-        return colour;
+        return color;
     }
 
     public void setColour(int colour)
     {
-        this.colour = colour;
+        this.color = colour;
     }
 
     public long getId()
