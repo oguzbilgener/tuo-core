@@ -6,7 +6,6 @@ package co.uberdev.ultimateorganizer.core;
 public class CoreAttachment extends Core
 {
     protected String path;
-    protected byte[] data;
     protected long ownerId;
     protected long relatedNoteId;
 
@@ -16,14 +15,6 @@ public class CoreAttachment extends Core
 
     public void setPath(String path) {
         this.path = path;
-    }
-
-    public byte[] getData() {
-        return data;
-    }
-
-    public void setData(byte[] data) {
-        this.data = data;
     }
 
     public long getOwnerId() {
