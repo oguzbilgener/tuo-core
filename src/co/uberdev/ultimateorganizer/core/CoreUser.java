@@ -20,8 +20,9 @@ public class CoreUser extends Core
     protected String publicKey;
     // the secret token - a token to authenticate and authorize the user. only sent once and stored both on the server side and the client side
     protected String secretToken;
-
+    // will be a key when password is forgotten, it will be sent to the user to reset her password
     protected String resetKey;
+    // amount of time user has, to submit resetKeydefi
     protected int resetDue;
 
     protected int state;
@@ -31,8 +32,8 @@ public class CoreUser extends Core
     protected String schoolName;
     protected String departmentName;
 
-    protected int created;
-    protected int birthday;
+    protected Date created;
+    protected Date birthday;
 
     // the devices list of the user. stored as json array
     protected CoreDevices devices;
@@ -137,19 +138,19 @@ public class CoreUser extends Core
         this.state = state;
     }
 
-    public int getCreated() {
+    public Date getCreated() {
         return created;
     }
 
-    public void setCreated(int created) {
+    public void setCreated(Date created) {
         this.created = created;
     }
 
-    public int getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(int birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
