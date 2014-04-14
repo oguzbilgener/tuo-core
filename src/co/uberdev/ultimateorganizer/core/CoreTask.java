@@ -144,10 +144,10 @@ public class CoreTask extends Core
         return status;
     }
 
-    public void setStatus(int status)
-    {
-        if(status >= 0 && status <= 3)
-            this.status = status;
+    public void setStatus(int status) throws BadStateException {
+        if(status < STATE_DELETED || status > STATE_ARCHIVED)
+            throw new BadStateException();
+        this.status = status;
     }
 
     public Date getDateCreated()
@@ -188,4 +188,9 @@ public class CoreTask extends Core
 	{
 		return this.asJsonString();
 	}
+
+    public static class BadStateException extends Exception
+    {
+
+    }
 }
