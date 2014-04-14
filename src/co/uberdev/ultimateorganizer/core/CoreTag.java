@@ -6,7 +6,7 @@ package co.uberdev.ultimateorganizer.core;
 public class CoreTag extends Core
 {
     protected String name;
-    protected int colour;
+    protected int color;
     protected long id;
     protected long ownerId;
 
@@ -15,14 +15,14 @@ public class CoreTag extends Core
         this.name = name;
     }
 
-    public int getColour()
+    public int getColor()
     {
-        return colour;
+        return color;
     }
 
-    public void setColour(int colour)
+    public void setColor(int colour)
     {
-        this.colour = colour;
+        this.color = color;
     }
 
     public long getId()
