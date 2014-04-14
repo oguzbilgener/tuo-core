@@ -23,4 +23,25 @@ public class CoreDataRules
         public static final String notes = "notes";
         public static final String tags = "tags";
     }
+
+    public static final class columns
+    {
+        public static final class users
+        {
+            public static final String emailAddress = "email_address";
+            public static final String passwordHashed = "password_hashed";
+            public static final String firstName = "first_name";
+            public static final String lastName = "last_name";
+            public static final String publicKey = "public_key";
+            public static final String secretToken = "secret_token";
+            public static final String state = "state";
+            public static final String resetKey = "reset_key";
+            public static final String resetDue = "reset_due";
+            public static final String schoolName = "school_name";
+            public static final String departmentName = "department_name";
+            public static final String created = "created";
+            public static final String birthday = "birthday";
+            public static final String devices = "devices";
+        }
+    }
 }

@@ -9,7 +9,7 @@ public interface CoreSelectable
 	public String getTableName();
 
 	// TODO: add detailed methods for querying different conditions
-    public boolean loadFromDb(String sqlCriteria, int limit);
+    public boolean loadFromDb(String sqlCriteria, String[] params, int limit);
     public boolean loadFromDb(int limit);
     public boolean loadFromDb();
 
