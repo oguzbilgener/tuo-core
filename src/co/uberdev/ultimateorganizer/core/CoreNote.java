@@ -19,7 +19,7 @@ public class CoreNote {
     protected Date lastModified;
 
     //Id of file attached to this note. Type subject to change
-    protected String attachment;
+    protected CoreAttachment attachment;
 
     //ID of the task that refers to this note.
     protected Long relatedTaskId;
@@ -33,11 +33,45 @@ public class CoreNote {
 
         this.id = id;
         this.ownerId = -1;
-
-
     }
 
+    public long getOwnerId() {
+        return ownerId;
+    }
 
+    public void setOwnerId(long ownerId) {
+        this.ownerId = ownerId;
+    }
 
+    public Date getDateCreated() {
+        return dateCreated;
+    }
 
+    public void setDateCreated(Date dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
+    public Date getLastModified() {
+        return lastModified;
+    }
+
+    public void setLastModified(Date lastModified) {
+        this.lastModified = lastModified;
+    }
+
+    public CoreAttachment getAttachment() {
+        return attachment;
+    }
+
+    public void setAttachment(CoreAttachment attachment) {
+        this.attachment = attachment;
+    }
+
+    public Long getRelatedTaskId() {
+        return relatedTaskId;
+    }
+
+    public void setRelatedTaskId(Long relatedTaskId) {
+        this.relatedTaskId = relatedTaskId;
+    }
 }
