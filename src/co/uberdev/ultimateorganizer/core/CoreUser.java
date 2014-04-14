@@ -21,6 +21,10 @@ public class CoreUser extends Core
     protected int created;
     protected int birthday;
 
+    public static final int STATE_BANNED = 0;
+    public static final int STATE_USER = 1;
+    public static final int STATE_ADMIN = 10;
+
     public String getEmailAddress() {
         return emailAddress;
     }

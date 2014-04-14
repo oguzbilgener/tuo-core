@@ -8,23 +8,19 @@ import java.util.Date;
  */
 public class CoreTask extends Core
 {
-    public static final int IS_ACTIVE = 0;
-    public static final int IS_ARCHIVED = 1;
-    public static final int IS_DELETED = 2;
-
     // Task's id
 	protected long id;
     // ownerId is the id of the user who creates the task
 	protected long ownerId;
 	protected String taskName;
 	protected String taskDesc;
-    // Tasks will always belong to three status, finalised above
+    // Tasks will always belong to four status, described below
     protected int status;
     // Tags that are related to the task will be in the tags ArrayList
     protected ArrayList<CoreTag> tags;
     // Related notes and related tasks will always be indicated by their id's, so linking process will be easier
     // Each task on the server will have a distinct id, each note on the server will have a distinct id
-    // Id's of tasks and notes will be counted seperately, so that the id's of a task and a note is possible to be the same
+    // Id's of tasks and notes will be counted separately, so that the id's of a task and a note is possible to be the same
     // Each task will have an arrayList of id's of related tasks and related notes to ease the linking process
     protected ArrayList<Long> relatedNotes;
     protected ArrayList<Long> relatedTasks;
@@ -38,6 +34,12 @@ public class CoreTask extends Core
     // beginDate is the Date user specifies for the task to begin, endDate is the date the task is due to
     protected Date beginDate;
     protected Date endDate;
+
+    // TASK states
+    public static final int STATE_ACTIVE = 1;
+    public static final int STATE_COMPLETED = 2;
+    public static final int STATE_ARCHIVED = 3;
+    public static final int STATE_DELETED = 0;
 
     public CoreTask()
 	{
@@ -144,7 +146,8 @@ public class CoreTask extends Core
 
     public void setStatus(int status)
     {
-        this.status = status;
+        if(status >= 0 && status <= 3)
+            this.status = status;
     }
 
     public Date getDateCreated()
