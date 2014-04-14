@@ -12,6 +12,7 @@ public class CoreTask extends Core
 	protected long id;
     // ownerId is the id of the user who creates the task
 	protected long ownerId;
+    // Task's name and description
 	protected String taskName;
 	protected String taskDesc;
     // Tasks will always belong to four status, described below
