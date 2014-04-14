@@ -28,6 +28,7 @@ public class CoreDataRules
     {
         public static final class users
         {
+            public static final String id = "id";
             public static final String emailAddress = "email_address";
             public static final String passwordHashed = "password_hashed";
             public static final String firstName = "first_name";
