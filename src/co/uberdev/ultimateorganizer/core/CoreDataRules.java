@@ -10,6 +10,8 @@ public class CoreDataRules
     public static final int PASSWORD_MAX_LENGTH = 32;
     public static final int FIRSTNAME_MAX_LENGTH = 255;
     public static final int LASTNAME_MAX_LENGTH = 255;
+    public static final int SCHOOLNAME_MAX_LENGTH = 255;
+    public static final int DEPARTMENT_MAX_LENGHT = 255;
 
     public static final int RESET_KEY_LIFETIME = 3600; // an hour
     public static final int ACTIVATION_KEY_LIFETIME = 86400; // a day
