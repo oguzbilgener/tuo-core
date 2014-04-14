@@ -3,7 +3,7 @@ package co.uberdev.ultimateorganizer.core;
 /**
  * Created by oguzbilgener on 14/04/14.
  */
-public class CoreAttachment extends Core
+public class CoreIcon extends Core
 {
     protected String path;
     protected long ownerId;
@@ -32,4 +32,5 @@ public class CoreAttachment extends Core
     public void setRelatedNoteId(long relatedNoteId) {
         this.relatedNoteId = relatedNoteId;
     }
+
 }
