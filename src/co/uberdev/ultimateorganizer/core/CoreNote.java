@@ -18,6 +18,9 @@ public class CoreNote {
     //Changed on edit. Used for syncing and sorting purposes.
     protected Date lastModified;
 
+    // The basic content of the note. May include some basic html for formatting
+    protected String content;
+
     //Id of file attached to this note. Type subject to change
     protected CoreAttachment attachment;
 
