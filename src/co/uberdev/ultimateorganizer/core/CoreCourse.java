@@ -3,7 +3,7 @@ package co.uberdev.ultimateorganizer.core;
 /**
  * Created by oguzbilgener on 14/04/14.
  */
-public class CoreCourse extends Core implements CoreSelectable
+public class CoreCourse extends Core
 {
     protected long id;
     protected long ownerId;
@@ -92,23 +92,4 @@ public class CoreCourse extends Core implements CoreSelectable
         this.courseColor = courseColor;
     }
 
-    @Override
-    public String getTableName() {
-        return null;
-    }
-
-    @Override
-    public boolean loadFromDb(String sqlCriteria, String[] params, int limit) {
-        return false;
-    }
-
-    @Override
-    public boolean loadFromDb(int limit) {
-        return false;
-    }
-
-    @Override
-    public boolean loadFromDb() {
-        return false;
-    }
 }

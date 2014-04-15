@@ -1,7 +1,6 @@
 package co.uberdev.ultimateorganizer.core;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * Created by Ata Ali Kılıçlı on 3/31/14.
@@ -14,9 +13,9 @@ public class CoreNote extends Core {
     protected long ownerId;
 
     //Creation date initialized on declaration.
-    protected Date dateCreated;
+    protected int dateCreated;
     //Changed on edit. Used for syncing and sorting purposes.
-    protected Date lastModified;
+    protected int lastModified;
 
     // The basic content of the note. May include some basic html for formatting
     protected String content;
@@ -31,8 +30,8 @@ public class CoreNote extends Core {
 
     public CoreNote(long id)
     {
-        dateCreated = new Date();
-        lastModified = new Date(dateCreated.getTime());
+        dateCreated = CoreUtils.getUnixTimestamp();
+        lastModified = CoreUtils.getUnixTimestamp();
 
         this.id = id;
         this.ownerId = -1;
@@ -46,19 +45,19 @@ public class CoreNote extends Core {
         this.ownerId = ownerId;
     }
 
-    public Date getDateCreated() {
+    public int getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(Date dateCreated) {
+    public void setDateCreated(int dateCreated) {
         this.dateCreated = dateCreated;
     }
 
-    public Date getLastModified() {
+    public int getLastModified() {
         return lastModified;
     }
 
-    public void setLastModified(Date lastModified) {
+    public void setLastModified(int lastModified) {
         this.lastModified = lastModified;
     }
 

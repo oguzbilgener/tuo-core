@@ -10,9 +10,18 @@ public class CoreTag extends Core
     protected long id;
     protected long ownerId;
 
+    public CoreTag()
+    {
+        this("");
+    }
+
+
     public CoreTag(String name)
     {
         this.name = name;
+        color = 0;
+        id = 0;
+        ownerId = -1;
     }
 
     public int getColor()
