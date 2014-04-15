@@ -22,6 +22,7 @@ public class CoreDataRules
         public static final String tasks = "tasks";
         public static final String notes = "notes";
         public static final String tags = "tags";
+        public static final String courses = "courses";
     }
 
     public static final class columns

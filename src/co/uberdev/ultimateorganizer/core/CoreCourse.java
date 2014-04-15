@@ -3,7 +3,7 @@ package co.uberdev.ultimateorganizer.core;
 /**
  * Created by oguzbilgener on 14/04/14.
  */
-public class CoreCourse extends Core implements CoreStorable
+public class CoreCourse extends Core
 {
     protected long id;
     protected long ownerId;
@@ -92,24 +92,4 @@ public class CoreCourse extends Core implements CoreStorable
         this.courseColor = courseColor;
     }
 
-
-    @Override
-    public String getTableName() {
-        return null;
-    }
-
-    @Override
-    public boolean insert() {
-        return false;
-    }
-
-    @Override
-    public boolean update() {
-        return false;
-    }
-
-    @Override
-    public boolean remove() {
-        return false;
-    }
 }
