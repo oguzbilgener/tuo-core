@@ -26,15 +26,15 @@ public class CoreTask extends Core
     protected ArrayList<Long> relatedNotes;
     protected ArrayList<Long> relatedTasks;
     // dateCreated signifies the creation date of the task, will be initialised when the task is created
-    protected Date dateCreated;
+    protected int dateCreated;
     // lastModified signifies the last modification date of the task, important for synchronisation
     // If a user previously downloaded a task and the creator of that task modified it later,
     // lastModifiedDate will be later than the last synchronisation date of the user who downloaded the task
     // The task will be replaced with the previously downloaded one
-    protected Date lastModified;
+    protected int lastModified;
     // beginDate is the Date user specifies for the task to begin, endDate is the date the task is due to
-    protected Date beginDate;
-    protected Date endDate;
+    protected int beginDate;
+    protected int endDate;
 
     // TASK states
     public static final int STATE_ACTIVE = 1;
@@ -49,7 +49,7 @@ public class CoreTask extends Core
 
 	public CoreTask(long id)
 	{
-        dateCreated = new Date();
+        dateCreated = CoreUtils.getUnixTimestamp();
 		this.id = id;
 		this.ownerId = -1;
         tags = new ArrayList<CoreTag>();
@@ -151,37 +151,37 @@ public class CoreTask extends Core
         this.status = status;
     }
 
-    public Date getDateCreated()
+    public int getDateCreated()
     {
         return dateCreated;
     }
 
-    public void setDateCreated(Date dateCreated)
+    public void setDateCreated(int dateCreated)
     {
         this.dateCreated = dateCreated;
     }
 
-    public Date getEndDate() {
+    public int getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(int endDate) {
         this.endDate = endDate;
     }
 
-    public Date getBeginDate() {
+    public int getBeginDate() {
         return beginDate;
     }
 
-    public void setBeginDate(Date beginDate) {
+    public void setBeginDate(int beginDate) {
         this.beginDate = beginDate;
     }
 
-    public Date getLastModified() {
+    public int getLastModified() {
         return lastModified;
     }
 
-    public void setLastModified(Date lastModified) {
+    public void setLastModified(int lastModified) {
         this.lastModified = lastModified;
     }
 

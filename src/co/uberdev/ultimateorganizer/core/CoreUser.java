@@ -32,8 +32,8 @@ public class CoreUser extends Core
     protected String schoolName;
     protected String departmentName;
 
-    protected Date created;
-    protected Date birthday;
+    protected int created;
+    protected int birthday;
 
     // the devices list of the user. stored as json array
     protected CoreDevices devices;
@@ -138,19 +138,19 @@ public class CoreUser extends Core
         this.state = state;
     }
 
-    public Date getCreated() {
+    public int getCreated() {
         return created;
     }
 
-    public void setCreated(Date created) {
+    public void setCreated(int created) {
         this.created = created;
     }
 
-    public Date getBirthday() {
+    public int getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(int birthday) {
         this.birthday = birthday;
     }
 
