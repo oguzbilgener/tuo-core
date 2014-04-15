@@ -1,7 +1,6 @@
 package co.uberdev.ultimateorganizer.core;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * Created by Ata Ali Kılıçlı on 3/31/14.
