@@ -18,11 +18,25 @@ public class CoreJSON extends HashMap<String, Object>
 
     public String getAsJsonString()
     {
-        return mapper.writeValueAsString(this);
+        try
+        {
+            return mapper.writeValueAsString(this);
+        }
+        catch(Exception e)
+        {
+            return null;
+        }
     }
 
     public JsonNode getAsJsonNode()
     {
-        return mapper.valueToTree(this);
+        try
+        {
+            return mapper.valueToTree(this);
+        }
+        catch (Exception e)
+        {
+            return null;
+        }
     }
 }
