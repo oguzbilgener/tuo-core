@@ -46,4 +46,31 @@ public class CoreDataRules
             public static final String devices = "devices";
         }
     }
+
+    public static final class fields
+    {
+        public static final class login
+        {
+            public static final String email = "email";
+            public static final String password = "password";
+        }
+
+        public static final class register
+        {
+            public static final String email = "email";
+            public static final String password = "password";
+            public static final String firstName = "first_name";
+            public static final String lastName = "last_name";
+            public static final String schoolName = "school_name";
+            public static final String departmentName = "department_name";
+            public static final String birthday = "birthday";
+            public static final String device = "device";
+        }
+
+        public static final class request
+        {
+            public static final String public_key = "public_key";
+            public static final String signature = "signature";
+        }
+    }
 }
