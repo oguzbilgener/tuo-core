@@ -1,5 +1,8 @@
 package co.uberdev.ultimateorganizer.core;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
 /**
  * Created by oguzbilgener on 15/04/14.
  */
@@ -34,5 +37,13 @@ public class CoreUtils
             builder.append(set.charAt( randomNumber(0, set.length()) ));
         }
         return builder.toString();
+    }
+
+    public static String getStackTrace(Exception e)
+    {
+        StringWriter sw = new StringWriter();
+        PrintWriter pw = new PrintWriter(sw);
+        e.printStackTrace(pw);
+        return sw.toString();
     }
 }
