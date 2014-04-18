@@ -16,4 +16,9 @@ public class Core
 	{
 		return new Gson().fromJson(json, type);
 	}
+
+    public String toString()
+    {
+        return asJsonString();
+    }
 }
