@@ -12,6 +12,6 @@ public class CoreTasks extends CoreList
 
     public CoreTask get(int index)
     {
-        return (CoreTask) get(index);
+        return (CoreTask) super.get(index);
     }
 }

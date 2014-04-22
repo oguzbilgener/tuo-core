@@ -12,7 +12,7 @@ public class CoreNotes extends CoreList
 
     public CoreNote get(int i)
     {
-        return (CoreNote) get(i);
+        return (CoreNote) super.get(i);
     }
 
 }

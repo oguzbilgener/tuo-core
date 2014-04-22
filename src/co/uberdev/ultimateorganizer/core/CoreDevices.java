@@ -7,6 +7,6 @@ public class CoreDevices extends CoreList {
 
     public CoreDevice get(int i)
     {
-        return (CoreDevice) get(i);
+        return (CoreDevice) super.get(i);
     }
 }

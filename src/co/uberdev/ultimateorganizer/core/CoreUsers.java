@@ -7,6 +7,6 @@ public class CoreUsers extends CoreList
 {
     public CoreUser get(int index)
     {
-        return (CoreUser) get(index);
+        return (CoreUser) super.get(index);
     }
 }

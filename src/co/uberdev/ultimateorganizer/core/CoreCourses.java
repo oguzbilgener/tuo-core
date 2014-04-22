@@ -7,6 +7,6 @@ public class CoreCourses extends CoreList
 {
     public CoreCourse get(int i)
     {
-        return (CoreCourse) get(i);
+        return (CoreCourse) super.get(i);
     }
 }
