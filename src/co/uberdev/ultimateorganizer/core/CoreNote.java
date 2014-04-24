@@ -1,7 +1,5 @@
 package co.uberdev.ultimateorganizer.core;
 
-import java.util.ArrayList;
-
 /**
  * Created by Ata Ali Kılıçlı on 3/31/14.
  */
@@ -27,6 +25,10 @@ public class CoreNote extends Core {
     protected Long relatedTaskId;
 
 
+	public CoreNote()
+	{
+		this(0);
+	}
 
     public CoreNote(long id)
     {
