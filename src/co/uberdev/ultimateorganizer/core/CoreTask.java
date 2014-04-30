@@ -24,6 +24,10 @@ public class CoreTask extends Core
     // Each task will have an arrayList of id's of related tasks and related notes to ease the linking process
     protected ArrayList<Long> relatedNotes;
     protected ArrayList<Long> relatedTasks;
+
+	// Reminders are stored as objects in tasks
+	// However, they will be inserted into a different table by using the insert method in
+	protected CoreReminders reminders;
     // dateCreated signifies the creation date of the task, will be initialised when the task is created
     protected int dateCreated;
     // lastModified signifies the last modification date of the task, important for synchronisation
@@ -54,6 +58,8 @@ public class CoreTask extends Core
         tags = new ArrayList<CoreTag>();
         relatedTasks = new ArrayList<Long>();
         relatedNotes = new ArrayList<Long>();
+
+		reminders = new CoreReminders();
 	}
 
 	public long getId() {
@@ -193,4 +199,21 @@ public class CoreTask extends Core
     {
 
     }
+
+	public void addReminder(CoreReminder reminder)
+	{
+		reminders.add(reminder);
+	}
+
+	public void removeReminder(CoreReminder reminder)
+	{
+		for(int i = 0; i < reminders.size(); i++)
+		{
+			if( reminder == reminders.get(i))
+			{
+				reminders.remove(i);
+				i--;
+			}
+		}
+	}
 }
