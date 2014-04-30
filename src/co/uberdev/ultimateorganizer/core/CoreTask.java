@@ -17,7 +17,7 @@ public class CoreTask extends Core
     // Tasks will always belong to four status, described below
     protected int status;
     // Tags that are related to the task will be in the tags ArrayList
-    protected ArrayList<CoreTag> tags;
+    protected CoreTags tags;
     // Related notes and related tasks will always be indicated by their id's, so linking process will be easier
     // Each task on the server will have a distinct id, each note on the server will have a distinct id
     // Id's of tasks and notes will be counted separately, so that the id's of a task and a note is possible to be the same
@@ -55,7 +55,7 @@ public class CoreTask extends Core
         dateCreated = CoreUtils.getUnixTimestamp();
 		this.id = id;
 		this.ownerId = -1;
-        tags = new ArrayList<CoreTag>();
+        tags = new CoreTags();
         relatedTasks = new ArrayList<Long>();
         relatedNotes = new ArrayList<Long>();
 
@@ -110,6 +110,11 @@ public class CoreTask extends Core
             }
         }
     }
+
+	public CoreTags getTags()
+	{
+		return tags;
+	}
 
     public void addNote(long id)
     {

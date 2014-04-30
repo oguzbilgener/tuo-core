@@ -45,6 +45,20 @@ public class CoreDataRules
             public static final String birthday = "birthday";
             public static final String devices = "devices";
         }
+
+		public static final class tasks
+		{
+			public static final String id = "id";
+			public static final String ownerId = "owner_id";
+			public static final String taskName = "name";
+			public static final String taskDesc = "desc";
+			public static final String status = "status";
+			public static final String tags = "tags";
+			public static final String dateCreated = "date_created";
+			public static final String lastModified = "last_modified";
+			public static final String beginDate = "begin_date";
+			public static final String endDate = "end_date";
+		}
     }
 
     public static final class fields
