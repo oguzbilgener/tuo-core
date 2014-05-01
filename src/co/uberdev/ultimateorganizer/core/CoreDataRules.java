@@ -60,6 +60,14 @@ public class CoreDataRules
 			public static final String beginDate = "begin_date";
 			public static final String endDate = "end_date";
 		}
+
+		public static final class tags
+		{
+			public static final String id = "id";
+			public static final String ownerId = "owner_id";
+			public static final String tagTitle = "title";
+			public static final String color = "color";
+		}
     }
 
     public static final class fields

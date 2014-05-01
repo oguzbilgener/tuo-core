@@ -25,6 +25,8 @@ public class CoreTask extends Core
     protected ArrayList<Long> relatedNotes;
     protected ArrayList<Long> relatedTasks;
 
+	protected boolean personal;
+
 	// Reminders are stored as objects in tasks
 	// However, they will be inserted into a different table by using the insert method in
 	protected CoreReminders reminders;
@@ -58,6 +60,7 @@ public class CoreTask extends Core
         tags = new CoreTags();
         relatedTasks = new ArrayList<Long>();
         relatedNotes = new ArrayList<Long>();
+		personal = false;
 
 		reminders = new CoreReminders();
 	}
@@ -195,7 +198,15 @@ public class CoreTask extends Core
         this.lastModified = lastModified;
     }
 
-    public String toString()
+	public boolean isPersonal() {
+		return personal;
+	}
+
+	public void setPersonal(boolean personal) {
+		this.personal = personal;
+	}
+
+	public String toString()
 	{
 		return this.asJsonString();
 	}
