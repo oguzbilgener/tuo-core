@@ -17,6 +17,8 @@ public class CoreTask extends Core
     // Task's name and description
 	protected String taskName;
 	protected String taskDesc;
+    // taskOwnerNameCombined is the combination of the user's first and last name such as "Ani Kristo"
+    protected String taskOwnerNameCombined;
     // Tasks will always belong to four status, described below
 	protected int status;
     // Tags that are related to the task will be in the tags ArrayList
@@ -264,4 +266,14 @@ public class CoreTask extends Core
 			}
 		}
 	}
+
+    public void setTaskOwnerNameCombined( String name)
+    {
+        taskOwnerNameCombined = name;
+    }
+
+    public String getTaskOwnerNameCombined()
+    {
+        return taskOwnerNameCombined;
+    }
 }
