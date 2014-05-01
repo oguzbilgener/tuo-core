@@ -68,6 +68,19 @@ public class CoreDataRules
 			public static final String tagTitle = "title";
 			public static final String color = "color";
 		}
+
+		public static final class courses
+		{
+			public static final String id = "id";
+			public static final String ownerId = "owner_id";
+			public static final String semester = "semester";
+			public static final String departmentCode = "department_code";
+			public static final String courseCode = "course_code";
+			public static final String sectionCode = "section_code";
+			public static final String title = "title";
+			public static final String instructor_name = "instructor_name";
+			public static final String color = "color;"
+		}
     }
 
     public static final class fields

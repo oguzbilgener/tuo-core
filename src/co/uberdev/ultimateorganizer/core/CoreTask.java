@@ -15,7 +15,7 @@ public class CoreTask extends Core
 	protected String taskName;
 	protected String taskDesc;
     // Tasks will always belong to four status, described below
-    protected int status;
+	protected int status;
     // Tags that are related to the task will be in the tags ArrayList
     protected CoreTags tags;
     // Related notes and related tasks will always be indicated by their id's, so linking process will be easier
