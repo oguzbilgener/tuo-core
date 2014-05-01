@@ -30,6 +30,11 @@ public class CoreTask extends Core
 	// Reminders are stored as objects in tasks
 	// However, they will be inserted into a different table by using the insert method in
 	protected CoreReminders reminders;
+
+	// The related course of the task
+	protected CoreCourse course;
+	// The code of this course
+	protected String courseCodeCombined;
     // dateCreated signifies the creation date of the task, will be initialised when the task is created
     protected int dateCreated;
     // lastModified signifies the last modification date of the task, important for synchronisation
@@ -204,6 +209,22 @@ public class CoreTask extends Core
 
 	public void setPersonal(boolean personal) {
 		this.personal = personal;
+	}
+
+	public CoreCourse getCourse() {
+		return course;
+	}
+
+	public void setCourse(CoreCourse course) {
+		this.course = course;
+	}
+
+	public String getCourseCodeCombined() {
+		return courseCodeCombined;
+	}
+
+	public void setCourseCodeCombined(String courseCodeCombined) {
+		this.courseCodeCombined = courseCodeCombined;
 	}
 
 	public String toString()
