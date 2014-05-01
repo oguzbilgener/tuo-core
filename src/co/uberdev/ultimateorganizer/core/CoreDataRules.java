@@ -79,7 +79,7 @@ public class CoreDataRules
 			public static final String sectionCode = "section_code";
 			public static final String title = "title";
 			public static final String instructor_name = "instructor_name";
-			public static final String color = "color;"
+			public static final String color = "color";
 		}
     }
 
