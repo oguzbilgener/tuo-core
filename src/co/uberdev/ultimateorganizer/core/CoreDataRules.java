@@ -55,6 +55,9 @@ public class CoreDataRules
 			public static final String taskDesc = "desc";
 			public static final String status = "status";
 			public static final String tags = "tags";
+			public static final String relatedTasks = "related_tasks";
+			public static final String relatedNotes = "related_notes";
+			public static final String reminders = "reminders";
 			public static final String dateCreated = "date_created";
 			public static final String lastModified = "last_modified";
 			public static final String beginDate = "begin_date";
