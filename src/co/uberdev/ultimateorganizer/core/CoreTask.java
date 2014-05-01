@@ -11,6 +11,9 @@ public class CoreTask extends Core
 	protected long id;
     // ownerId is the id of the user who creates the task
 	protected long ownerId;
+
+	// the owner user of this task. Warning: might be null
+	protected CoreUser owner;
     // Task's name and description
 	protected String taskName;
 	protected String taskDesc;
@@ -76,6 +79,14 @@ public class CoreTask extends Core
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public CoreUser getOwner() {
+		return owner;
+	}
+
+	public void setOwner(CoreUser owner) {
+		this.owner = owner;
 	}
 
 	public long getOwnerId() {
