@@ -115,6 +115,19 @@ public class CoreTask extends Core
 		this.taskDesc = taskDesc;
 	}
 
+    public CoreReminders getReminders(){return reminders;}
+
+    public void setReminders(CoreReminders reminders){this.reminders = reminders;}
+
+    public ArrayList<Long> getRelatedTasks(){return relatedTasks;}
+
+    public void setRelatedTasks(ArrayList<Long> relatedTasks){this.relatedTasks = relatedTasks;}
+
+    public ArrayList<Long> getRelatedNotes(){return relatedNotes;}
+
+    public void setRelatedNotes(ArrayList<Long> relatedNotes){this.relatedNotes = relatedNotes;}
+
+
     public void addTag(CoreTag t)
     {
         tags.add( t);
