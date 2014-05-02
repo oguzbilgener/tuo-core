@@ -5,6 +5,7 @@ package co.uberdev.ultimateorganizer.core;
  */
 public class CoreReminder extends Core
 {
+	private long id;
 	private long targetDate;
 	private long taskId;
 	private String title;
@@ -16,6 +17,14 @@ public class CoreReminder extends Core
 	public CoreReminder()
 	{
 
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public long getTargetDate() {
