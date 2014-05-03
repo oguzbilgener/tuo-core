@@ -52,7 +52,7 @@ public class CoreDataRules
 			public static final String id = "id";
 			public static final String ownerId = "owner_id";
 			public static final String taskName = "name";
-			public static final String taskDesc = "desc";
+			public static final String taskDesc = "description";
 			public static final String status = "status";
 			public static final String tags = "tags";
 			public static final String relatedTasks = "related_tasks";
