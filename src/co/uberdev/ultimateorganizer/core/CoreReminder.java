@@ -8,6 +8,8 @@ public class CoreReminder extends Core
 	protected long id;
 	protected long targetDate;
 	protected long taskId;
+	protected long ownerId;
+	protected long localTaskId;
 	protected long gap; // the gap between the begin date of the task and targetDate of the reminder
 	protected String title;
 	protected String details;
@@ -48,6 +50,22 @@ public class CoreReminder extends Core
 
 	public void setTaskId(long taskId) {
 		this.taskId = taskId;
+	}
+
+	public long getOwnerId() {
+		return ownerId;
+	}
+
+	public void setOwnerId(long ownerId) {
+		this.ownerId = ownerId;
+	}
+
+	public long getLocalTaskId() {
+		return localTaskId;
+	}
+
+	public void setLocalTaskId(long localTaskId) {
+		this.localTaskId = localTaskId;
 	}
 
 	public long getGap() {

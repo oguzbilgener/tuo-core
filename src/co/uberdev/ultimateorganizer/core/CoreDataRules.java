@@ -95,6 +95,8 @@ public class CoreDataRules
             public static final String id = "id";
             public static final String targetDate = "target_date";
             public static final String taskId = "task_id";
+            public static final String ownerId = "owner_id";
+            public static final String localTaskId = "local_task_id";
             public static final String gap = "gap";
             public static final String title = "title";
             public static final String details = "details";
