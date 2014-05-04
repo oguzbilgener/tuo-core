@@ -64,6 +64,7 @@ public class CoreDataRules
 			public static final String beginDate = "begin_date";
 			public static final String endDate = "end_date";
 			public static final String course = "course";
+            public static final String courseId = "course_id";
 			public static final String courseCodeCombined = "course_code_combined";
 			public static final String taskOwnerNameCombined = "task_owner_name_combined";
 		}
