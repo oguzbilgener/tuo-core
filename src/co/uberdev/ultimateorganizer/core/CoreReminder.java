@@ -5,15 +5,15 @@ package co.uberdev.ultimateorganizer.core;
  */
 public class CoreReminder extends Core
 {
-	private long id;
-	private long targetDate;
-	private long taskId;
-	private long gap; // the gap between the begin date of the task and targetDate of the reminder
-	private String title;
-	private String details;
-	private boolean vibrate;
-	private boolean sound;
-	private boolean light;
+	protected long id;
+	protected long targetDate;
+	protected long taskId;
+	protected long gap; // the gap between the begin date of the task and targetDate of the reminder
+	protected String title;
+	protected String details;
+	protected boolean vibrate;
+	protected boolean sound;
+	protected boolean light;
 
 	public CoreReminder()
 	{
