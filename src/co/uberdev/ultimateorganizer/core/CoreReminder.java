@@ -17,7 +17,13 @@ public class CoreReminder extends Core
 
 	public CoreReminder()
 	{
-
+		targetDate = 0;
+		gap = 0;
+		title = "";
+		details = "";
+		vibrate = false;
+		sound = false;
+		light = false;
 	}
 
 	public long getId() {
