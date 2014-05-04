@@ -38,6 +38,8 @@ public class CoreTask extends Core
 
 	// The related course of the task
 	protected CoreCourse course;
+	// the id on the server side of this course
+	protected int courseId;
 	// The code of this course
 	protected String courseCodeCombined;
     // dateCreated signifies the creation date of the task, will be initialised when the task is created
@@ -289,4 +291,16 @@ public class CoreTask extends Core
     {
         return taskOwnerNameCombined;
     }
+
+	public int getCourseId() {
+		return courseId;
+	}
+
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
+	}
+
+	public void setTags(CoreTags tags) {
+		this.tags = tags;
+	}
 }
