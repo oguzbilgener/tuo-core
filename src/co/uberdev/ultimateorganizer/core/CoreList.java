@@ -24,4 +24,14 @@ public class CoreList extends ArrayList<Core>
 	{
 		return asJsonString();
 	}
+
+	public static CoreList fromArrayList(ArrayList<Core> coreArrayList)
+	{
+		CoreList list = new CoreList();
+		for(int i=0; i<coreArrayList.size(); i++)
+		{
+			list.set(i, coreArrayList.get(i));
+		}
+		return list;
+	}
 }
