@@ -8,6 +8,7 @@ public class CoreReminder extends Core
 	private long id;
 	private long targetDate;
 	private long taskId;
+	private long gap; // the gap between the begin date of the task and targetDate of the reminder
 	private String title;
 	private String details;
 	private boolean vibrate;
@@ -41,6 +42,14 @@ public class CoreReminder extends Core
 
 	public void setTaskId(long taskId) {
 		this.taskId = taskId;
+	}
+
+	public long getGap() {
+		return gap;
+	}
+
+	public void setGap(long gap) {
+		this.gap = gap;
 	}
 
 	public String getTitle() {
