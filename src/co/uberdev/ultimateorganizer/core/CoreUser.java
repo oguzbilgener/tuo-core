@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class CoreUser extends Core
 {
+    protected long id;
     // the email address of the user
     protected String emailAddress;
     // the plain password of the user (NEVER STORED)
@@ -40,6 +41,14 @@ public class CoreUser extends Core
     public static final int STATE_BANNED = 0;
     public static final int STATE_USER = 1;
     public static final int STATE_ADMIN = 10;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getEmailAddress() {
         return emailAddress;
