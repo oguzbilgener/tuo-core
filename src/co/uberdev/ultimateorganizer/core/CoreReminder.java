@@ -91,4 +91,24 @@ public class CoreReminder extends Core
 	public void setLight(boolean light) {
 		this.light = light;
 	}
+
+	/**
+	 * yep, CS101 things can be necessary sometimes
+	 * @param obj
+	 * @return
+	 */
+	@Override
+	public boolean equals(Object obj)
+	{
+		if(!(obj instanceof CoreReminder))
+			return false;
+
+		CoreReminder reminder = (CoreReminder) obj;
+		// do not check equity for every single property. we don't use reminders the way described above yet.
+		if(this.gap == reminder.getGap() && this.targetDate == reminder.getTargetDate()
+				&& this.light == reminder.isLight() && this.sound == reminder.isSound()
+				&& this.vibrate == reminder.isVibrate())
+			return true;
+		return false;
+	}
 }
