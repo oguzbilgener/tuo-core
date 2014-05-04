@@ -89,6 +89,19 @@ public class CoreDataRules
 			public static final String instructor_name = "instructor_name";
 			public static final String color = "color";
 		}
+
+        public static final class reminders
+        {
+            public static final String id = "id";
+            public static final String targetDate = "target_date";
+            public static final String taskId = "task_id";
+            public static final String gap = "gap";
+            public static final String title = "title";
+            public static final String details = "details";
+            public static final String vibrate = "vibrate";
+            public static final String sound = "sound";
+            public static final String light = "light";
+        }
     }
 
     public static final class fields
