@@ -39,6 +39,10 @@ public class CoreNote extends Core {
         this.ownerId = -1;
     }
 
+    public void setId(long id){ this.id = id; }
+
+    public long getId(){ return id; }
+
     public long getOwnerId() {
         return ownerId;
     }
@@ -46,6 +50,10 @@ public class CoreNote extends Core {
     public void setOwnerId(long ownerId) {
         this.ownerId = ownerId;
     }
+
+    public void setContent(String content){ this.content = content; }
+
+    public String getContent(){ return content; }
 
     public int getDateCreated() {
         return dateCreated;

@@ -69,6 +69,17 @@ public class CoreDataRules
 			public static final String taskOwnerNameCombined = "task_owner_name_combined";
 		}
 
+        public static final class notes
+        {
+            public static final String id = "id";
+            public static final String ownerId = "owner_id";
+            public static final String dateCreated = "date_created";
+            public static final String lastModified = "last_modified";
+            public static final String content = "content";
+            public static final String attachment =  "attachment";
+            public static final String relatedTaskID = "related_task_id";
+        }
+
 		public static final class tags
 		{
 			public static final String id = "id";
