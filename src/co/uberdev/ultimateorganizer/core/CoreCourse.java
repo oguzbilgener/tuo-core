@@ -92,4 +92,8 @@ public class CoreCourse extends Core
         this.courseColor = courseColor;
     }
 
+	public String getCourseCodeCombined()
+	{
+		return getDepartmentCode()+" "+getCourseCode()+"-"+getSectionCode();
+	}
 }
