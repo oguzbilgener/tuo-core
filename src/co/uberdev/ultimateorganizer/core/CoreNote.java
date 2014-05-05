@@ -30,6 +30,20 @@ public class CoreNote extends Core {
 
     protected int status;
 
+    public String getNoteDescription() {
+        return noteDescription;
+    }
+
+    public void setNoteDescription(String noteDescription) {
+        this.noteDescription = noteDescription;
+    }
+
+    protected String noteDescription;
+
+    protected String noteTitle;
+
+    protected CoreTags relatedTags;
+
 
 	public CoreNote()
 	{
@@ -99,5 +113,13 @@ public class CoreNote extends Core {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String getNoteTitle() {
+        return noteTitle;
+    }
+
+    public void setNoteTitle(String noteTitle) {
+        this.noteTitle = noteTitle;
     }
 }
