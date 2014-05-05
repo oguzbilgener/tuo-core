@@ -5,10 +5,10 @@ package co.uberdev.ultimateorganizer.core;
  */
 public class CoreNote extends Core {
 
-    private final int NOTE_PLAIN = 0;
-    private final int NOTE_PHOTO = 1;
-    private final int NOTE_AUDIO = 2;
-    private final int NOTE_DETAILED = 3;
+    public final int NOTE_PLAIN = 0;
+    public final int NOTE_PHOTO = 1;
+    public final int NOTE_AUDIO = 2;
+    public final int NOTE_TODO = 3;
 
     protected long id;
 
