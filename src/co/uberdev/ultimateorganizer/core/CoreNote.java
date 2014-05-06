@@ -5,6 +5,10 @@ package co.uberdev.ultimateorganizer.core;
  */
 public class CoreNote extends Core {
 
+    public final int NOTE_PLAIN = 0;
+    public final int NOTE_PHOTO = 1;
+    public final int NOTE_AUDIO = 2;
+    public final int NOTE_TODO = 3;
 
     protected long id;
 
@@ -23,6 +27,22 @@ public class CoreNote extends Core {
 
     //ID of the task that refers to this note.
     protected Long relatedTaskId;
+
+    protected int status;
+
+    public String getNoteDescription() {
+        return noteDescription;
+    }
+
+    public void setNoteDescription(String noteDescription) {
+        this.noteDescription = noteDescription;
+    }
+
+    protected String noteDescription;
+
+    protected String noteTitle;
+
+    protected CoreTags relatedTags;
 
 
 	public CoreNote()
@@ -85,5 +105,21 @@ public class CoreNote extends Core {
 
     public void setRelatedTaskId(Long relatedTaskId) {
         this.relatedTaskId = relatedTaskId;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public String getNoteTitle() {
+        return noteTitle;
+    }
+
+    public void setNoteTitle(String noteTitle) {
+        this.noteTitle = noteTitle;
     }
 }
