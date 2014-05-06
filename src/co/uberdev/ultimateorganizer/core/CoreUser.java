@@ -1,10 +1,9 @@
 package co.uberdev.ultimateorganizer.core;
 
-import java.util.ArrayList;
-
 public class CoreUser extends Core
 {
     protected long id;
+	protected long localId;
     // the email address of the user
     protected String emailAddress;
     // the plain password of the user (NEVER STORED)
@@ -49,6 +48,16 @@ public class CoreUser extends Core
     public void setId(long id) {
         this.id = id;
     }
+
+	public long getLocalId()
+	{
+		return localId;
+	}
+
+	public void setLocalId(long localId)
+	{
+		this.localId = localId;
+	}
 
     public String getEmailAddress() {
         return emailAddress;

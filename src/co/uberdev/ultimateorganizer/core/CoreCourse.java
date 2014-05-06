@@ -6,6 +6,7 @@ package co.uberdev.ultimateorganizer.core;
 public class CoreCourse extends Core
 {
     protected long id;
+	protected long localId;
     protected long ownerId;
 
     protected String courseSemester;
@@ -27,6 +28,16 @@ public class CoreCourse extends Core
     public void setId(long id) {
         this.id = id;
     }
+
+	public long getLocalId()
+	{
+		return localId;
+	}
+
+	public void setLocalId(long localId)
+	{
+		this.localId = localId;
+	}
 
     public long getOwnerId() {
         return ownerId;

@@ -11,6 +11,7 @@ public class CoreNote extends Core {
     public final int NOTE_TODO = 3;
 
     protected long id;
+	protected long localId;
 
     protected long ownerId;
 
@@ -62,6 +63,16 @@ public class CoreNote extends Core {
     public void setId(long id){ this.id = id; }
 
     public long getId(){ return id; }
+
+	public long getLocalId()
+	{
+		return localId;
+	}
+
+	public void setLocalId(long localId)
+	{
+		this.localId = localId;
+	}
 
     public long getOwnerId() {
         return ownerId;

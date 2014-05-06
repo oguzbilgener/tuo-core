@@ -9,6 +9,7 @@ public class CoreTask extends Core
 {
     // Task's id
 	protected long id;
+	protected long localId;
     // ownerId is the id of the user who creates the task
 	protected long ownerId;
 
@@ -83,6 +84,16 @@ public class CoreTask extends Core
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public long getLocalId()
+	{
+		return localId;
+	}
+
+	public void setLocalId(long localId)
+	{
+		this.localId = localId;
 	}
 
 	public CoreUser getOwner() {

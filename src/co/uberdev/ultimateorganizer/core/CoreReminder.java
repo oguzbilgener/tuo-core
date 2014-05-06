@@ -6,6 +6,7 @@ package co.uberdev.ultimateorganizer.core;
 public class CoreReminder extends Core
 {
 	protected long id;
+	protected long localId;
 	protected long targetDate;
 	protected long taskId;
 	protected long ownerId;

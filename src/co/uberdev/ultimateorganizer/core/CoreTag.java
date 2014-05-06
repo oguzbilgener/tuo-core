@@ -8,6 +8,7 @@ public class CoreTag extends Core
     protected String name;
     protected int color;
     protected long id;
+	protected long localId;
     protected long ownerId;
 
     public CoreTag()
@@ -44,7 +45,15 @@ public class CoreTag extends Core
         this.id = id;
     }
 
-    public long getOwnerId()
+	public long getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(long localId) {
+		this.localId = localId;
+	}
+
+	public long getOwnerId()
     {
         return ownerId;
     }
