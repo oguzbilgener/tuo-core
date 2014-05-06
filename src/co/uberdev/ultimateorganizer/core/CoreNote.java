@@ -114,7 +114,7 @@ public class CoreNote extends Core {
         return relatedTaskId;
     }
 
-    public void setRelatedTaskId(l ong relatedTaskId) {
+    public void setRelatedTaskId(long relatedTaskId) {
         this.relatedTaskId = relatedTaskId;
     }
 
