@@ -25,7 +25,15 @@ public class CoreTag extends Core
         ownerId = -1;
     }
 
-    public int getColor()
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getColor()
     {
         return color;
     }
