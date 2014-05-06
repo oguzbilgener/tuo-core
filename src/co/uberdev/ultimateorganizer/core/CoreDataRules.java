@@ -50,6 +50,7 @@ public class CoreDataRules
 		public static final class tasks
 		{
 			public static final String id = "id";
+			public static final String serverId = "server_id"; // id means local id in SQLite, server_id means server id for sync purposes
 			public static final String ownerId = "owner_id";
 			public static final String taskName = "name";
 			public static final String taskDesc = "description";
@@ -72,6 +73,7 @@ public class CoreDataRules
         public static final class notes
         {
             public static final String id = "id";
+			public static final String serverId = "server_id"; // id means local id in SQLite, server_id means server id for sync purposes
             public static final String ownerId = "owner_id";
             public static final String dateCreated = "date_created";
             public static final String lastModified = "last_modified";
@@ -83,6 +85,7 @@ public class CoreDataRules
 		public static final class tags
 		{
 			public static final String id = "id";
+			public static final String serverId = "server_id"; // id means local id in SQLite, server_id means server id for sync purposes
 			public static final String ownerId = "owner_id";
 			public static final String tagTitle = "title";
 			public static final String color = "color";
@@ -91,6 +94,7 @@ public class CoreDataRules
 		public static final class courses
 		{
 			public static final String id = "id";
+			public static final String serverId = "server_id"; // id means local id in SQLite, server_id means server id for sync purposes
 			public static final String ownerId = "owner_id";
 			public static final String semester = "semester";
 			public static final String departmentCode = "department_code";
@@ -104,6 +108,7 @@ public class CoreDataRules
         public static final class reminders
         {
             public static final String id = "id";
+			public static final String serverId = "server_id"; // id means local id in SQLite, server_id means server id for sync purposes
             public static final String targetDate = "target_date";
             public static final String taskId = "task_id";
             public static final String ownerId = "owner_id";
