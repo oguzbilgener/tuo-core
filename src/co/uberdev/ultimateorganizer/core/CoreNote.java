@@ -27,7 +27,7 @@ public class CoreNote extends Core {
     protected CoreAttachment attachment;
 
     //ID of the task that refers to this note.
-    protected Long relatedTaskId;
+    protected long relatedTaskId;
 
     protected int status;
 
@@ -110,11 +110,11 @@ public class CoreNote extends Core {
         this.attachment = attachment;
     }
 
-    public Long getRelatedTaskId() {
+    public long getRelatedTaskId() {
         return relatedTaskId;
     }
 
-    public void setRelatedTaskId(Long relatedTaskId) {
+    public void setRelatedTaskId(l ong relatedTaskId) {
         this.relatedTaskId = relatedTaskId;
     }
 
