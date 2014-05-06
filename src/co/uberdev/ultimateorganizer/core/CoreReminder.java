@@ -37,6 +37,14 @@ public class CoreReminder extends Core
 		this.id = id;
 	}
 
+	public long getLocalId() {
+		return localId;
+	}
+
+	public void setLocalId(long localId) {
+		this.localId = localId;
+	}
+
 	public long getTargetDate() {
 		return targetDate;
 	}
