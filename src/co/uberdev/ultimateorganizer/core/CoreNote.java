@@ -133,4 +133,9 @@ public class CoreNote extends Core {
     public void setNoteTitle(String noteTitle) {
         this.noteTitle = noteTitle;
     }
+
+	public boolean isEmpty()
+	{
+		return getNoteTitle().isEmpty();
+	}
 }

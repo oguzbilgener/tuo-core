@@ -314,4 +314,9 @@ public class CoreTask extends Core
 	public void setTags(CoreTags tags) {
 		this.tags = tags;
 	}
+
+	public boolean isEmpty()
+	{
+		return getTaskName().isEmpty();
+	}
 }
