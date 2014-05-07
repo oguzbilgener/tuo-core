@@ -30,6 +30,7 @@ public class CoreReminder extends Core
 		vibrate = false;
 		sound = false;
 		light = false;
+		alarmId = 0;
 	}
 
 	public long getId() {
