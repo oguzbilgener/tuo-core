@@ -40,7 +40,7 @@ public class CoreTag extends Core
 
     public void setColor(int colour)
     {
-        this.color = color;
+        this.color = colour;
     }
 
     public long getId()
