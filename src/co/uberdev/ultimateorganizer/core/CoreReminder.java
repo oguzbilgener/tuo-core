@@ -18,6 +18,9 @@ public class CoreReminder extends Core
 	protected boolean sound;
 	protected boolean light;
 
+	// Alarm id is only used on the client side but we had to be sure that it was included in the json object
+	protected long alarmId;
+
 	public CoreReminder()
 	{
 		targetDate = 0;
@@ -123,6 +126,14 @@ public class CoreReminder extends Core
 
 	public void setLight(boolean light) {
 		this.light = light;
+	}
+
+	public long getAlarmId() {
+		return alarmId;
+	}
+
+	public void setAlarmId(long alarmId) {
+		this.alarmId = alarmId;
 	}
 
 	/**
