@@ -1,7 +1,11 @@
 package co.uberdev.ultimateorganizer.core;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
 
 /**
  * Created by oguzbilgener on 15/04/14.
@@ -46,4 +50,14 @@ public class CoreUtils
         e.printStackTrace(pw);
         return sw.toString();
     }
+
+	public static String longArrayListToJson(ArrayList<Long> list)
+	{
+		return new Gson().toJson(list);
+	}
+
+	public static ArrayList<Long> jsonToLongArrayList(String json)
+	{
+		return new Gson().fromJson(json,  new TypeToken<ArrayList<Long>>(){}.getType());
+	}
 }
