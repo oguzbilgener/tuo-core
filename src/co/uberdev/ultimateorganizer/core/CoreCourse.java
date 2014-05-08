@@ -118,6 +118,6 @@ public class CoreCourse extends Core
 
 	public boolean isEmpty()
 	{
-		return getCourseCode().length() <= 3; // minimum: space, dash and zero
+		return getCourseCodeCombined().length() <= 3; // minimum: space, dash and zero
 	}
 }
