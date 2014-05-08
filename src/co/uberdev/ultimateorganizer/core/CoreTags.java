@@ -9,4 +9,9 @@ public class CoreTags extends CoreList
 	{
 		return (CoreTag) super.get(i);
 	}
+
+	public Core get(int i, boolean b)
+	{
+		return super.get(i);
+	}
 }
