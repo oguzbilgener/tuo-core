@@ -107,4 +107,9 @@ public class CoreCourse extends Core
 	{
 		return getDepartmentCode()+" "+getCourseCode()+"-"+getSectionCode();
 	}
+
+    public boolean isEmpty()
+    {
+        return getCourseTitle().isEmpty();
+    }
 }
