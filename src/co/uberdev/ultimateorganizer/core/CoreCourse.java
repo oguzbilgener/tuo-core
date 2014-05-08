@@ -21,6 +21,14 @@ public class CoreCourse extends Core
 
     protected int courseColor;
 
+	public CoreCourse()
+	{
+		courseSemester = "";
+		departmentCode = "";
+		courseCode = "";
+		sectionCode = 0;
+	}
+
     public long getId() {
         return id;
     }
@@ -106,5 +114,10 @@ public class CoreCourse extends Core
 	public String getCourseCodeCombined()
 	{
 		return getDepartmentCode()+" "+getCourseCode()+"-"+getSectionCode();
+	}
+
+	public boolean isEmpty()
+	{
+		return getCourseCode().length() <= 3; // minimum: space, dash and zero
 	}
 }
