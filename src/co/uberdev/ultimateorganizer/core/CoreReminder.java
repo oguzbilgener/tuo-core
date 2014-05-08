@@ -7,11 +7,11 @@ public class CoreReminder extends Core
 {
 	protected long id;
 	protected long localId;
-	protected long targetDate;
+	protected long targetDate; // in seconds, unix timestamp
 	protected long taskId;
 	protected long ownerId;
 	protected long localTaskId;
-	protected long gap; // the gap between the begin date of the task and targetDate of the reminder
+	protected long gap; // the gap between the begin date of the task and targetDate of the reminder, in minutes
 	protected String title;
 	protected String details;
 	protected boolean vibrate;

@@ -51,8 +51,8 @@ public class CoreTask extends Core
     // The task will be replaced with the previously downloaded one
     protected int lastModified;
     // beginDate is the Date user specifies for the task to begin, endDate is the date the task is due to
-    protected int beginDate;
-    protected int endDate;
+    protected int beginDate; // in seconds, unix timestamp
+    protected int endDate; // in seconds, unix timestamp
 
     // TASK states
     public static final int STATE_ACTIVE = 1;
