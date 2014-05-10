@@ -24,6 +24,7 @@ public class CoreDataRules
         public static final String tags = "tags";
         public static final String courses = "courses";
 		public static final String reminders = "reminders";
+		public static final String cloned_tasks = "cloned_tasks";
     }
 
     public static final class columns
@@ -122,6 +123,14 @@ public class CoreDataRules
             public static final String sound = "sound";
             public static final String light = "light";
         }
+
+		public static final class cloned_tasks
+		{
+			public static final String itemId = "item_id";
+			public static final String originalId = "original_id";
+			public static final String cloneId = "clone_id";
+			public static final String cloneLocalId = "clone_local_id";
+		}
     }
 
     public static final class fields
