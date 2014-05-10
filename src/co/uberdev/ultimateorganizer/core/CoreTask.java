@@ -30,6 +30,7 @@ public class CoreTask extends Core
     // Each task will have an arrayList of id's of related tasks and related notes to ease the linking process
     protected ArrayList<Long> relatedNotes;
     protected ArrayList<Long> relatedTasks;
+	protected ArrayList<Long> relatedTasksLocal;
 
 	protected boolean personal;
 
@@ -318,5 +319,13 @@ public class CoreTask extends Core
 	public boolean isEmpty()
 	{
 		return getTaskName().isEmpty();
+	}
+
+	public ArrayList<Long> getRelatedTasksLocal() {
+		return relatedTasksLocal;
+	}
+
+	public void setRelatedTasksLocal(ArrayList<Long> relatedTasksLocal) {
+		this.relatedTasksLocal = relatedTasksLocal;
 	}
 }

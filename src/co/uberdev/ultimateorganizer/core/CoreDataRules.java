@@ -69,6 +69,7 @@ public class CoreDataRules
 			public static final String courseCodeCombined = "course_code_combined";
 			public static final String taskOwnerNameCombined = "task_owner_name_combined";
 			public static final String alarmIndex = "alarm_index";
+			public static final String relatedTasksLocal = "related_tasks_local";
 		}
 
         public static final class notes
