@@ -3,7 +3,7 @@ package co.uberdev.ultimateorganizer.core;
 import java.util.ArrayList;
 
 /**
- * Created by oguzbilgener on 28/02/14.
+ * Created by dunkuCoder on 28/02/14.
  */
 public class CoreTask extends Core
 {
